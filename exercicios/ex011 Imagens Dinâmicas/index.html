@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Fazendo teste de abrir imagens dinamicas em varios tamanhos</p>
+    <picture> <!-- Precisa está em ordem, do maior para o menor, min ou max. Gosto de usar min, começando de baixo pra cima-->
+        <source media="(min-width: 1050px)" srcset="imagens/foto-1000.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="imagens/foto-700.png" type="image/png">
+        <img src="imagens/foto-300.png" alt="Imagem padrão">
+    </picture>
+    <h2>Reproduzindo áudio</h2>
+    <p>Testando áudios</p>
+    <audio src="midia/halo-theme.mp3" autoplay controls></audio> <!-- Para o eu do futuro, usar controls faz com que habilite a musica no site, autoplay parece não funcionar.-->
+    <!--OUTROS EXEMPLOS DE ADICIONAR AUDIO-->
+    <!--source src="midia/halo-theme.mp3" type="audio/mpeg"-->
+    <!--repete o inicio mudando somente o .mp3 colocando .ogg ou .wav-->
+    <!--no type só altera depois do audio/ também, colocando /ogg ou /wav-->
+    <!-- <p>Seu navegador não é compativel para escutar audios <a href="midia/halo-theme.mp3">Clique aqui</a> para fazer o download da musica</p> -->
+</body>
+</html>

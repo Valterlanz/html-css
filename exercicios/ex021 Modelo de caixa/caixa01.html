@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /* Tudo abaixo é box-level */
+            background-color: lightgray;
+            width: 300px;
+            height: 300px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: lightslategray;
+            /* abaixo border simplificado na ordem acima */
+            border: 10px solid lightslategray;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            /* abaixo padding simplificado na ordem acima */
+            padding: 10px 10px 10px 10px 10px;
+            
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            /* abaixo margin simplificado na ordem acima */
+            margin: 20px 20px 40px 20px;
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: black;
+            /* abaixo outline simplificado na ordem acima */
+            outline: 5px dashed black;
+        }
+
+        a { /* Tudo abaixo é inline-level */
+            border-width: 5px;
+            border-style: solid;
+            border-color: lightslategray;
+
+            border: 5px solid lightslategray;
+
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos de box-level</h1>
+    <p>Paragráfos são box-level, por exemplo. Más os  <a href="#"> Links são exemplos de caixa incline-level.</a></p>
+</body>
+</html>

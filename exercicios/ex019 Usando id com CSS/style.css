@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(112, 112, 151);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(0, 45, 59);
+}
+/* o "id" ajuda a indentificar e separar para usos unicos, por exemplo colocar o h1 principal no centro 
+id= # PARA USO UNICO
+class = . PARA USO MULTIPLOS
+*/
+h1#central {
+    text-align: center;
+    color: black;
+}
+
+h2 {
+    color: rgb(21, 82, 82);
+}
+
+.basico {
+    color: rgb(28, 82, 21);
+}
+
+.intermediario {
+    color: rgb(82, 78, 21);
+}
+
+.avancado {
+    color: rgb(82, 21, 21);
+}
+
+.italico {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    color: rgb(255, 254, 254);
+}
+
+.destaque {
+    background-color: aliceblue;
+}

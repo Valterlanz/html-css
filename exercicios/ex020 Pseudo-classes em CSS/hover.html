@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+        /* O :hover é a pseudo-classe mais comum. Ela serve para aplicar estilos apenas quando o usuário passa o cursor (mouse) sobre um elemento, sem necessariamente clicar nele.
+
+        Pense nisso como um "gatilho visual". Se o elemento está em repouso, ele tem o Estilo A; se o mouse está em cima, o navegador injeta o Estilo B. Assim que o mouse sai, ele volta ao Estilo A instantaneamente. 
+         div > p = significa que p é filho da div, logo essa ação só sera ativada quando clicar no div do p */
+        div > p {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.4s ease; /* Efeito de fade, fica muito mais limpo */
+    }
+
+    div:hover > p {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    </style>
+    <body>
+        <h1>Exemplo de hover</h1>
+        <p>Tenta passar o mouse em cima do texto, digitado abaixo..</p>
+        <div>Passa o mouse aqui
+            <p>Viu? a mágica acontecendo</p>
+        </div>
+        
+        <p>Fim do Texto</p>
+    </body>

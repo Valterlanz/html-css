@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        a {
+            color: rgb(253, 0, 0);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /* :visited: Usado em links (<a>) para mostrar que o cara já clicou ali antes. */
+        a:visited {
+            color: rgb(253, 0, 0);
+        }
+
+        .especial {
+            background-color: rgb(243, 165, 165);
+        }
+        /* :hover, altera cor, ou pode aparecer "magicamente" algo ao passar o mouse por cima */
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        /*:active O estado enquanto o botão está sendo pressionado. Sabe quando o botão parece que "afunda" no clique? É isso aqui. Exemplo cliquei em um link dai adicionei uma color com active, ele ira mudar de de cor */
+        a:active {
+            color: darkslategray;
+        }
+
+        .especial::before {
+            content: '➔ ';
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+
+    <ul>
+        <li><a href="https://www.facebook.com/chernoshino/?locale=pt_BR"  target="_blank">Conta no Facebook</a></li>
+        <br>
+        <li><a href="https://www.youtube.com/feed/you" target="_blank" class="especial">Canal no Youtube</a></li>
+    </ul>
+</body>
+</html>

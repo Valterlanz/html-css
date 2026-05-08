@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Imagem flexivel</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p><strong>Acha que essa imagem está completa? experimente ampliar ou diminui-la.</strong></p>
+
+    <picture>
+        <source media="(min-width: 1250px )" srcset="imagens/homem-aranha-1200.jpg" type="image/jpg">
+        <source media="(min-width: 750px)" srcset="imagens/homem-aranha-740.jpg" type="image/jpg">
+        <img src="imagens/homem-aranha-280.jpg" alt="Imagem minima">
+    </picture>
+
+    <h2>Desafio completo</h2>
+</body>
+</html>
