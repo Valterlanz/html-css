@@ -5,4 +5,4 @@
 2.0 Apredendo a gerenciar repositórios
 
 
-<a href="https://valterlanz.github.io/html-css/ex001 Seu primeiro código HTML/index.html">Executar exercício 001</a>
+<a href="https://valterlanz.github.io/html-css/exercicios/ex001 Seu primeiro código HTML/index.html">Executar exercício 001</a>
