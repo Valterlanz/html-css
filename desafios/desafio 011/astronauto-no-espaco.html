@@ -1,0 +1,32 @@
+<!DOCTYPE DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço</title>
+    <style>
+        /* O RESET: Tira a margem padrão que cria a barra de rolagem */
+        body {
+            margin: 0; 
+            padding: 0;
+            background-image: url(imagens/espaco.jpg);
+            background-size: cover; /* Faz o espaço cobrir a tela toda sem distorcer */
+            background-position: center center;
+            height: 100vh; /* Agora o 100% da tela funciona sem bug de rolamento */
+        }
+
+        /* Só a classe, mais limpo e direto */
+        .astronauta {
+            background-image: url(imagens/astronauta.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            height: 100%; /* Preenche os 100vh do body perfeitamente */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="astronauta"></div>
+
+</body>
+</html>
