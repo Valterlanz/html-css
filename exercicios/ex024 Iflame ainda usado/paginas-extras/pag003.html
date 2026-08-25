@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados de Tabela</title>
+</head>
+<style>
+    body {
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    table {
+        border-collapse: collapse;
+    }
+    caption {
+        padding: 10px;
+        font-weight: bold;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 10px;
+        
+    }
+</style>
+<body>
+    <h1>Exercicio de Tabela</h1>
+    <table>
+        <caption>
+                Filmes Favoritos
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup"> Homem</th>
+                <td> Tony</td>
+                <td> Circulo de Fogo</td>
+                <td> Vingadores</td>
+                <td> John wick</td>
+            </tr>
+            <tr>
+                <td> Valter</td>
+                <td> Rambo</td>
+                <td> Predador</td>
+                <td> Mercenários</td>
+            </tr>
+            <tr>
+                <td>Valber</td>
+                <td>Toy Story</td>
+                <td>Avatar</td>
+                <td>Circulo de Fogo</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup"> Mulher</th>
+                <td>Mari</td>
+                <td> Obsession</td>
+                <td> O chamado</td>
+                <td> Pânico</td>
+            </tr>
+            <tr>
+                <td>Laura</td>
+                <td> Senhor dos Anéis</td>
+                <td> Harry potter</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>Matrix</td>
+                <td>Interestelar</td>
+                <td>Star Wars</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
