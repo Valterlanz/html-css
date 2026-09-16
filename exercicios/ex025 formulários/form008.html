@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Testando JS</h1>
+    <form action="cadastro.py" method="get">
+        <p>
+            <label for="umnum">Numero 1: </label>
+            <input type="number" name="number" id="umnum" min="0" max="100" required oninput="umaso.innerHTML = Number(umnum.value) + Number(umnum2.value)">
+        </p>
+        <p>
+            <label for="umnum2">Numero 2:</label>
+            <input type="number" name="number" id="umnum2" min="0" max="100" required oninput = "umaso.innerHTML = Number(umnum.value) + Number(umnum2.value)">
+        </p>
+            <label for="umaso">Soma: </label>
+            <output name="Soma" id="umaso">0</output>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de JS</h1>
+    <form action="cadastro.py" method="get">
+        <p>
+            <label for="umnum">Porcentagem: </label>
+            <input type="range" name="Porcentagem" id="umnum" min="0" max="10" oninput="total.innerHTML = Number(umnum.value)">
+            <output id="total">5</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de JS</h1>
+    <form action="cadastro.py" method="get">
+        <p>
+            <label for="umano">Ano em que você nasceu: </label>
+            <input type="number" name="Ano" id="umano" min="1930" max="2026" oninput="calcularidade()">
+        </p>
+        <p>
+            <label for="suaidade">Sua idade: </label>
+            <output id="suaidade">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <script>
+        function calcularidade() {
+            let atual = new Date().getFullYear()
+            suaidade.innerHTML = Number(atual) - Number(umano.value)
+        }
+    </script>
+
+</body>
+</html>
