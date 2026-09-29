@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+/* Todas as outras midias */
+
+/* Typical Device breakpoints
+
+Telas pequenas: 576px.
+Celulares:  576px até 767px.
+Tablets: 768px px até 991px.
+Laptops: 992px até 1199px.
+Pc: 1200px até 1399px.
+Telas grandes TV: 1400px.
+
+*/
+
+@media print {
+    body {
+        background-image: url(../imagens/back-print.jpg);
+    }
+    * {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    main {
+        border: 2px solid black;
+    }
+    img#print {
+        display: block;
+        margin: auto;
+    }
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    
+    }
+    img#tablet {
+        display: block;
+        margin: auto;
+    }
+    img#phone {display: none;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#pc {
+        display: block;
+        margin: auto;
+    }
+    img#phone {display: none;}
+    img#print {display: none;}
+    img#tablet {display: none;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#pc {
+        display: block;
+        margin: auto;
+    }
+    img#phone {display: none;}
+    img#print {display: none;}
+    img#tablet {display: none;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 1400px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#tv {
+        display: block;
+        margin: auto;
+    }
+    img#phone {display: none;}
+    img#print {display: none;}
+    img#tablet {display: none;}
+    img#pc {display: none;}
+}

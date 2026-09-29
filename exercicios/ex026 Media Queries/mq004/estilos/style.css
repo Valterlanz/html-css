@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* Configuração para Todos */
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    background: black url(../imagens/back-phone.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.548);
+    width: 90vw;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 15px;
+}
+img#phone {
+    display: block;
+    margin: auto;
+}
+
+img {display: none;}
