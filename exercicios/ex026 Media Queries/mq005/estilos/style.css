@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0px;
+    padding: 0px;
+}
+html body {
+    background-color: darkgray;
+}
+header {
+    background-color: darkgray;
+}
+
+header h1 {
+    text-align: center;
+    background-color: darkgray;
+    padding: 5px;
+}
+
+span#burguer {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    display: block;
+    color: white;
+    cursor: pointer;
+
+}
+span#burguer:hover {
+    background-color: rgb(78, 76, 76);
+}
+
+menu {
+    display: none;
+    background-color: rgb(39, 39, 39);
+}
+
+menu > ul > li > a {
+    display: block;
+    text-align: center;
+    text-decoration-line: none;
+    color: rgb(248, 248, 248);
+    background-color: rgb(39, 39, 39);
+    padding: 5px;
+}
+
+menu > ul > li > a:hover {
+    background-color: rgb(82, 81, 81);
+}
+
+main {
+    width: 90vw;
+    margin: auto;
+    padding: 8px;
+    text-align: justify;
+    background-color: white;
+    border-radius: 8px;
+}
+
+main > article > h2 {
+    text-align: center;
+}
+
+main > article > p {
+    
+    margin-bottom: 10px;
+}

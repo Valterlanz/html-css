@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Site</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="tamanho()">
+    <header>
+        <h1>Novo Site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+        menu
+        </span>
+        <menu id="menup">
+            <ul>
+                <li><a href="#">Midias</a></li>
+                <li><a href="#">Politica</a></li>
+                <li><a href="#">Esportes</a></li>
+                <li><a href="#">Tecnologia</a></li>
+                <li><a href="#">Fale Conosco</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Teste</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus maiores possimus eligendi aliquid quia corrupti laborum amet? Repudiandae culpa labore nostrum tempore necessitatibus enim eius hic libero natus nihil. Tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea hic sequi assumenda itaque praesentium ut, ratione rem debitis molestiae exercitationem reprehenderit placeat illum id nihil molestias consequatur ipsam repudiandae cum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus et excepturi eius ad recusandae qui voluptatibus at, quasi doloribus ex assumenda dolor. Aut unde officiis aliquam sapiente, nesciunt adipisci doloremque?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptatem minima odit ratione sit fugiat suscipit, aut quod id necessitatibus repellendus tempora a quae esse aspernatur reiciendis laboriosam! Nesciunt, fuga! </p>
+        </article>
+    </main>
+    <script>
+        function tamanho() {
+            if (window.innerWidth >= 991){
+                menup.style.display = 'block'
+            } else {
+                menup.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+            if (menup.style.display == 'block') {
+                menup.style.display = 'none'
+            } else {
+                menup.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

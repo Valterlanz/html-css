@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/* Typical Device breakpoints
+
+Telas pequenas: 576px.
+Celulares:  576px até 767px.
+Tablets: 768px px até 991px.
+Laptops: 992px até 1199px.
+Pc: 1200px até 1399px.
+Telas grandes TV: 1400px.
+
+*/
+
+@media screen and (min-width: 991px) {
+    span#burguer {
+        display: none;
+    }
+    menu {
+        display: block;
+    }
+    menu > ul > li > a {
+        text-align: left;
+    }
+    ul {
+        display: flex;
+        gap: 10px;
+        list-style-type: none;
+    }
+    main {
+        width: 800px;
+    }
+}
